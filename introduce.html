@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm 5 - Lập Trình Web</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-graduation-cap"></i> Nhóm 5</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-section="home">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-section="about">
+                        <i class="fas fa-info-circle"></i> About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-section="skills">
+                        <i class="fas fa-code"></i> Skills
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link" data-section="portfolio">
+                        <i class="fas fa-briefcase"></i> Portfolio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#hobbies" class="nav-link" data-section="hobbies">
+                        <i class="fas fa-heart"></i> Hobbies
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#members" class="nav-link" data-section="members">
+                        <i class="fas fa-users"></i> Members
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Chào mừng đến với Nhóm 5</h1>
+                <p class="hero-subtitle">Chúng tôi là một nhóm sinh viên đam mê lập trình web</p>
+                <p class="hero-description">Cùng nhau học hỏi và phát triển những dự án tuyệt vời</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn-primary" data-section="about">
+                        <i class="fas fa-info-circle"></i>
+                        Tìm hiểu thêm
+                    </a>
+                    <a href="#members" class="btn-secondary" data-section="members">
+                        <i class="fas fa-users"></i>
+                        Gặp gỡ thành viên
+                    </a>
+                </div>
+            </div>
+            <div class="hero-animation">
+                <div class="floating-card code-card">
+                    <i class="fas fa-code"></i>
+                    <span>Code</span>
+                </div>
+                <div class="floating-card design-card">
+                    <i class="fas fa-palette"></i>
+                    <span>Design</span>
+                </div>
+                <div class="floating-card mobile-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Mobile</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="hero-decoration">
+            <div class="decoration-circle circle-1"></div>
+            <div class="decoration-circle circle-2"></div>
+            <div class="decoration-circle circle-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Giới thiệu về nhóm</h2>
+                <p>Nhóm 5 gồm 5 thành viên đầy nhiệt huyết và sáng tạo</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Sứ mệnh của chúng tôi</h3>
+                    <p>Chúng tôi tin rằng công nghệ web có thể thay đổi thế giới. Với niềm đam mê lập trình và khát khao học hỏi, nhóm chúng tôi luôn nỗ lực để tạo ra những sản phẩm web chất lượng cao.</p>
+                    
+                    <h3>Giá trị cốt lõi</h3>
+                    <ul class="values-list">
+                        <li><i class="fas fa-lightbulb"></i> Sáng tạo và đổi mới</li>
+                        <li><i class="fas fa-handshake"></i> Hợp tác và đoàn kết</li>
+                        <li><i class="fas fa-chart-line"></i> Học hỏi không ngừng</li>
+                        <li><i class="fas fa-award"></i> Chất lượng và hiệu quả</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Thành viên</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Dự án</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Năm kinh nghiệm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kỹ năng của nhóm</h2>
+                <p>Những công nghệ mà chúng tôi thành thạo</p>
+            </div>
+            <div class="skills-content">
+                <!-- Member Skills Navigation -->
+                <div class="member-skills-nav">
+                    <button class="member-skill-btn active" data-member="thuần" onclick="showMemberSkills('thuần')">
+                        <i class="fas fa-user-tie"></i> Nguyễn Duy Thuần
+                    </button>
+                    <button class="member-skill-btn" data-member="quang" onclick="showMemberSkills('quang')">
+                        <i class="fas fa-palette"></i> Trần Văn Quang
+                    </button>
+                    <button class="member-skill-btn" data-member="khả" onclick="showMemberSkills('khả')">
+                        <i class="fas fa-server"></i> Nguyễn Trần Duy Khả
+                    </button>
+                    <button class="member-skill-btn" data-member="huy" onclick="showMemberSkills('huy')">
+                        <i class="fas fa-code"></i> Trần Phan Đình Huy
+                    </button>
+                    <button class="member-skill-btn" data-member="vũ" onclick="showMemberSkills('vũ')">
+                        <i class="fas fa-bug"></i> Nguyễn Thanh Vũ
+                    </button>
+                </div>
+
+                <!-- Member Skills Content -->
+                <div class="member-skills-container">
+                    <!-- Nguyễn Duy Thuần Skills -->
+                    <div class="member-skills active" id="skills-thuần">
+                        <div class="member-info">
+                            <h3><i class="fas fa-user-tie"></i> Nguyễn Duy Thuần - Team Leader</h3>
+                            <p>Sinh viên khóa 22 - Chuyên về quản lý dự án và Full-stack Development</p>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4><i class="fas fa-code"></i> Frontend</h4>
+                                <div class="skill-item">
+                                    <span>HTML5</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>CSS3</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>JavaScript</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="65%"></div></div>
+                                    <span class="skill-percent">65%</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fas fa-server"></i> Backend</h4>
+                                <div class="skill-item">
+                                    <span>Node.js</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="60%"></div></div>
+                                    <span class="skill-percent">60%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Express.js</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="55%"></div></div>
+                                    <span class="skill-percent">55%</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fas fa-tools"></i> Tools & Others</h4>
+                                <div class="skill-item">
+                                    <span>Git</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Project Management</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trần Văn Quang Skills -->
+                    <div class="member-skills" id="skills-quang">
+                        <div class="member-info">
+                            <h3><i class="fas fa-palette"></i> Trần Văn Quang - UI/UX Designer</h3>
+                            <p>Sinh viên khóa 22 - Chuyên về thiết kế giao diện và trải nghiệm người dùng</p>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4><i class="fas fa-paint-brush"></i> Design</h4>
+                                <div class="skill-item">
+                                    <span>Figma</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Adobe XD</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="65%"></div></div>
+                                    <span class="skill-percent">65%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Photoshop</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="60%"></div></div>
+                                    <span class="skill-percent">60%</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fas fa-code"></i> Frontend</h4>
+                                <div class="skill-item">
+                                    <span>HTML5</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>CSS3</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>JavaScript</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="65%"></div></div>
+                                    <span class="skill-percent">65%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nguyễn Trần Duy Khả Skills -->
+                    <div class="member-skills" id="skills-khả">
+                        <div class="member-info">
+                            <h3><i class="fas fa-server"></i> Nguyễn Trần Duy Khả - Backend Developer</h3>
+                            <p>Sinh viên khóa 22 - Chuyên về phát triển backend và cơ sở dữ liệu</p>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4><i class="fas fa-server"></i> Backend</h4>
+                                <div class="skill-item">
+                                    <span>PHP</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Python</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="65%"></div></div>
+                                    <span class="skill-percent">65%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Laravel</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="60%"></div></div>
+                                    <span class="skill-percent">60%</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fas fa-database"></i> Database</h4>
+                                <div class="skill-item">
+                                    <span>MySQL</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>PostgreSQL</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="65%"></div></div>
+                                    <span class="skill-percent">65%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trần Phan Đình Huy Skills -->
+                    <div class="member-skills" id="skills-huy">
+                        <div class="member-info">
+                            <h3><i class="fas fa-code"></i> Trần Phan Đình Huy - Frontend Developer</h3>
+                            <p>Sinh viên khóa 22 - Chuyên về frontend và các framework hiện đại</p>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4><i class="fas fa-code"></i> Frontend</h4>
+                                <div class="skill-item">
+                                    <span>Vue.js</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Angular</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="65%"></div></div>
+                                    <span class="skill-percent">65%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>JavaScript</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fas fa-tools"></i> Tools</h4>
+                                <div class="skill-item">
+                                    <span>SASS</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Webpack</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="60%"></div></div>
+                                    <span class="skill-percent">60%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nguyễn Thanh Vũ Skills -->
+                    <div class="member-skills" id="skills-vũ">
+                        <div class="member-info">
+                            <h3><i class="fas fa-bug"></i> Nguyễn Thanh Vũ - DevOps & QA Tester</h3>
+                            <p>Sinh viên khóa 22 - Chuyên về testing và deployment</p>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4><i class="fas fa-cloud"></i> DevOps</h4>
+                                <div class="skill-item">
+                                    <span>Docker</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="65%"></div></div>
+                                    <span class="skill-percent">65%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Jenkins</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="55%"></div></div>
+                                    <span class="skill-percent">55%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>AWS</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="50%"></div></div>
+                                    <span class="skill-percent">50%</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fas fa-bug"></i> Testing</h4>
+                                <div class="skill-item">
+                                    <span>Manual Testing</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Automation Testing</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-width="60%"></div></div>
+                                    <span class="skill-percent">60%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Portfolio</h2>
+                <p>Những dự án tiêu biểu của chúng tôi</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Music Streaming App</h3>
+                        <p>Ứng dụng nghe nhạc trực tuyến với giao diện hiện đại và tính năng phong phú</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <a href="#" class="portfolio-link">Xem chi tiết</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>E-commerce Website</h3>
+                        <p>Website thương mại điện tử hoàn chỉnh với hệ thống thanh toán</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <a href="#" class="portfolio-link">Xem chi tiết</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Learning Management System</h3>
+                        <p>Hệ thống quản lý học tập trực tuyến cho học sinh và giáo viên</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <a href="#" class="portfolio-link">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sở thích</h2>
+                <p>Những điều chúng tôi yêu thích ngoài lập trình</p>
+            </div>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-images-container">
+                        <div class="hobby-slideshow" id="music-slideshow">
+                            <div class="slide active">
+                                <img src="img/vanquang.jpg" alt="Trần Văn Quang - Music" onclick="openHobbyGallery('music', 0)" />
+                                <div class="slide-caption">Trần Văn Quang</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/DuyThuan.jpg" alt="Nguyễn Duy Thuần - Music" onclick="openHobbyGallery('music', 1)" />
+                                <div class="slide-caption">Nguyễn Duy Thuần</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/DuyKha.jpg" alt="Nguyễn Trần Duy Khả - Music" onclick="openHobbyGallery('music', 2)" />
+                                <div class="slide-caption">Nguyễn Trần Duy Khả</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/ĐìnhHuy.jpg" alt="Trần Phan Đình Huy - Music" onclick="openHobbyGallery('music', 3)" />
+                                <div class="slide-caption">Trần Phan Đình Huy</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/thanhvu.jpg" alt="Nguyễn Thanh Vũ - Music" onclick="openHobbyGallery('music', 4)" />
+                                <div class="slide-caption">Nguyễn Thanh Vũ</div>
+                            </div>
+                        </div>
+                        <div class="hobby-gallery" id="music-gallery">
+                            <div class="gallery-thumbnails" id="music-thumbnails">
+                                <!-- Thumbnails will be populated by JavaScript -->
+                            </div>
+                            <button class="add-hobby-image-btn" onclick="addHobbyImage('music')">
+                                <i class="fas fa-plus"></i> Add Image
+                            </button>
+                            <input type="file" id="music-input" accept="image/*" multiple style="display: none;" onchange="handleHobbyImageUpload('music', this)" />
+                        </div>
+                    </div>
+                    <div class="hobby-content">
+                        <div class="hobby-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>Listening to Music</h3>
+                        <p>Âm nhạc là nguồn cảm hứng bất tận. Chúng tôi yêu thích mọi thể loại từ pop, rock đến EDM và classical để thư giãn sau những giờ code.</p>
+                        <span class="hobby-tag">Relaxation</span>
+                    </div>
+                </div>
+                
+                <div class="hobby-card">
+                    <div class="hobby-images-container">
+                        <div class="hobby-slideshow" id="travel-slideshow">
+                            <div class="slide active">
+                                <img src="img/DuyKha.jpg" alt="Nguyễn Trần Duy Khả - Travel" onclick="openHobbyGallery('travel', 0)" />
+                                <div class="slide-caption">Nguyễn Trần Duy Khả</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/vanquang.jpg" alt="Trần Văn Quang - Travel" onclick="openHobbyGallery('travel', 1)" />
+                                <div class="slide-caption">Trần Văn Quang</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/DuyThuan.jpg" alt="Nguyễn Duy Thuần - Travel" onclick="openHobbyGallery('travel', 2)" />
+                                <div class="slide-caption">Nguyễn Duy Thuần</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/ĐìnhHuy.jpg" alt="Trần Phan Đình Huy - Travel" onclick="openHobbyGallery('travel', 3)" />
+                                <div class="slide-caption">Trần Phan Đình Huy</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/thanhvu.jpg" alt="Nguyễn Thanh Vũ - Travel" onclick="openHobbyGallery('travel', 4)" />
+                                <div class="slide-caption">Nguyễn Thanh Vũ</div>
+                            </div>
+                        </div>
+                        <div class="hobby-gallery" id="travel-gallery">
+                            <div class="gallery-thumbnails" id="travel-thumbnails">
+                                <!-- Thumbnails will be populated by JavaScript -->
+                            </div>
+                            <button class="add-hobby-image-btn" onclick="addHobbyImage('travel')">
+                                <i class="fas fa-plus"></i> Add Image
+                            </button>
+                            <input type="file" id="travel-input" accept="image/*" multiple style="display: none;" onchange="handleHobbyImageUpload('travel', this)" />
+                        </div>
+                    </div>
+                    <div class="hobby-content">
+                        <div class="hobby-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Go Sightseeing with Friends</h3>
+                        <p>Du lịch cùng bạn bè giúp chúng tôi khám phá những điều mới mẻ và tạo ra những kỷ niệm đẹp bên nhau.</p>
+                        <span class="hobby-tag">Adventure</span>
+                    </div>
+                </div>
+                
+                <div class="hobby-card">
+                    <div class="hobby-images-container">
+                        <div class="hobby-slideshow" id="sports-slideshow">
+                            <div class="slide active">
+                                <img src="img/DuyThuan.jpg" alt="Nguyễn Duy Thuần - Sports" onclick="openHobbyGallery('sports', 0)" />
+                                <div class="slide-caption">Nguyễn Duy Thuần</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/thanhvu.jpg" alt="Nguyễn Thanh Vũ - Sports" onclick="openHobbyGallery('sports', 1)" />
+                                <div class="slide-caption">Nguyễn Thanh Vũ</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/vanquang.jpg" alt="Trần Văn Quang - Sports" onclick="openHobbyGallery('sports', 2)" />
+                                <div class="slide-caption">Trần Văn Quang</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/DuyKha.jpg" alt="Nguyễn Trần Duy Khả - Sports" onclick="openHobbyGallery('sports', 3)" />
+                                <div class="slide-caption">Nguyễn Trần Duy Khả</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/ĐìnhHuy.jpg" alt="Trần Phan Đình Huy - Sports" onclick="openHobbyGallery('sports', 4)" />
+                                <div class="slide-caption">Trần Phan Đình Huy</div>
+                            </div>
+                        </div>
+                        <div class="hobby-gallery" id="sports-gallery">
+                            <div class="gallery-thumbnails" id="sports-thumbnails">
+                                <!-- Thumbnails will be populated by JavaScript -->
+                            </div>
+                            <button class="add-hobby-image-btn" onclick="addHobbyImage('sports')">
+                                <i class="fas fa-plus"></i> Add Image
+                            </button>
+                            <input type="file" id="sports-input" accept="image/*" multiple style="display: none;" onchange="handleHobbyImageUpload('sports', this)" />
+                        </div>
+                    </div>
+                    <div class="hobby-content">
+                        <div class="hobby-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h3>Sports</h3>
+                        <p>Thể thao giúp chúng tôi duy trì sức khỏe và tinh thần tốt, tăng cường sự tập trung và khả năng làm việc nhóm.</p>
+                        <span class="hobby-tag">Fitness</span>
+                    </div>
+                </div>
+                
+                <div class="hobby-card">
+                    <div class="hobby-images-container">
+                        <div class="hobby-slideshow" id="reading-slideshow">
+                            <div class="slide active">
+                                <img src="img/ĐìnhHuy.jpg" alt="Trần Phan Đình Huy - Reading" onclick="openHobbyGallery('reading', 0)" />
+                                <div class="slide-caption">Trần Phan Đình Huy</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/DuyKha.jpg" alt="Nguyễn Trần Duy Khả - Reading" onclick="openHobbyGallery('reading', 1)" />
+                                <div class="slide-caption">Nguyễn Trần Duy Khả</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/DuyThuan.jpg" alt="Nguyễn Duy Thuần - Reading" onclick="openHobbyGallery('reading', 2)" />
+                                <div class="slide-caption">Nguyễn Duy Thuần</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/vanquang.jpg" alt="Trần Văn Quang - Reading" onclick="openHobbyGallery('reading', 3)" />
+                                <div class="slide-caption">Trần Văn Quang</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/thanhvu.jpg" alt="Nguyễn Thanh Vũ - Reading" onclick="openHobbyGallery('reading', 4)" />
+                                <div class="slide-caption">Nguyễn Thanh Vũ</div>
+                            </div>
+                        </div>
+                        <div class="hobby-gallery" id="reading-gallery">
+                            <div class="gallery-thumbnails" id="reading-thumbnails">
+                                <!-- Thumbnails will be populated by JavaScript -->
+                            </div>
+                            <button class="add-hobby-image-btn" onclick="addHobbyImage('reading')">
+                                <i class="fas fa-plus"></i> Add Image
+                            </button>
+                            <input type="file" id="reading-input" accept="image/*" multiple style="display: none;" onchange="handleHobbyImageUpload('reading', this)" />
+                        </div>
+                    </div>
+                    <div class="hobby-content">
+                        <div class="hobby-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Reading</h3>
+                        <p>Đọc sách giúp mở rộng kiến thức, phát triển tư duy logic và cập nhật những xu hướng công nghệ mới nhất.</p>
+                        <span class="hobby-tag">Learning</span>
+                    </div>
+                </div>
+                
+                <div class="hobby-card">
+                    <div class="hobby-images-container">
+                        <div class="hobby-slideshow" id="gaming-slideshow">
+                            <div class="slide active">
+                                <img src="img/thanhvu.jpg" alt="Nguyễn Thanh Vũ - Gaming" onclick="openHobbyGallery('gaming', 0)" />
+                                <div class="slide-caption">Nguyễn Thanh Vũ</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/ĐìnhHuy.jpg" alt="Trần Phan Đình Huy - Gaming" onclick="openHobbyGallery('gaming', 1)" />
+                                <div class="slide-caption">Trần Phan Đình Huy</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/vanquang.jpg" alt="Trần Văn Quang - Gaming" onclick="openHobbyGallery('gaming', 2)" />
+                                <div class="slide-caption">Trần Văn Quang</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/DuyThuan.jpg" alt="Nguyễn Duy Thuần - Gaming" onclick="openHobbyGallery('gaming', 3)" />
+                                <div class="slide-caption">Nguyễn Duy Thuần</div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/DuyKha.jpg" alt="Nguyễn Trần Duy Khả - Gaming" onclick="openHobbyGallery('gaming', 4)" />
+                                <div class="slide-caption">Nguyễn Trần Duy Khả</div>
+                            </div>
+                        </div>
+                        <div class="hobby-gallery" id="gaming-gallery">
+                            <div class="gallery-thumbnails" id="gaming-thumbnails">
+                                <!-- Thumbnails will be populated by JavaScript -->
+                            </div>
+                            <button class="add-hobby-image-btn" onclick="addHobbyImage('gaming')">
+                                <i class="fas fa-plus"></i> Add Image
+                            </button>
+                            <input type="file" id="gaming-input" accept="image/*" multiple style="display: none;" onchange="handleHobbyImageUpload('gaming', this)" />
+                        </div>
+                    </div>
+                    <div class="hobby-content">
+                        <div class="hobby-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>Gaming</h3>
+                        <p>Chơi game không chỉ giải trí mà còn giúp chúng tôi hiểu rõ hơn về UI/UX design và trải nghiệm người dùng.</p>
+                        <span class="hobby-tag">Entertainment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Members Section -->
+    <section id="members" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Thành viên nhóm</h2>
+                <p>Gặp gỡ những con người tuyệt vời trong nhóm chúng tôi</p>
+            </div>
+            <div class="members-grid">
+                <!-- Member 1 -->
+                <div class="member-card" onclick="openMemberModal('member1')">
+                    <div class="member-avatar-container">
+                        <div class="member-avatar" id="avatar-member1">
+                            <img src="img/member1-avatar.jpg" alt="Nguyễn Duy Thuần" class="avatar-img">
+                            <i class="fas fa-user avatar-icon" style="display: none;"></i>
+                        </div>
+                        <div class="avatar-upload">
+                            <input type="file" id="upload-member1" accept="image/*" onchange="uploadAvatar('member1', this)">
+                            <label for="upload-member1" class="upload-btn">
+                                <i class="fas fa-camera"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Nguyễn Duy Thuần</h3>
+                        <p class="member-role">Team Leader & Full-stack Developer</p>
+                        <p class="member-description">Chuyên gia về React và Node.js, có kinh nghiệm  trong phát triển web.</p>
+                        <div class="member-social">
+                            <a href="https://www.facebook.com/na.thanh.311056/" class="social-link facebook" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="showEmail('thuan@example.com')" class="social-link email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="member-card" onclick="openMemberModal('member2')">
+                    <div class="member-avatar-container">
+                        <div class="member-avatar" id="avatar-member2">
+                            <img src="img/member2-avatar.jpg" alt="Trần Văn Quang" class="avatar-img">
+                            <i class="fas fa-user avatar-icon" style="display: none;"></i>
+                        </div>
+                        <div class="avatar-upload">
+                            <input type="file" id="upload-member2" accept="image/*" onchange="uploadAvatar('member2', this)">
+                            <label for="upload-member2" class="upload-btn">
+                                <i class="fas fa-camera"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Trần Văn Quang</h3>
+                        <p class="member-role">Frontend Developer & UI/UX Designer</p>
+                        <p class="member-description">Đam mê thiết kế giao diện người dùng và có khả năng sáng tạo tuyệt vời.</p>
+                        <div class="member-social">
+                            <a href="https://facebook.com/tranvanquang" class="social-link facebook" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="showEmail('quang@example.com')" class="social-link email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="member-card" onclick="openMemberModal('member3')">
+                    <div class="member-avatar-container">
+                        <div class="member-avatar" id="avatar-member3">
+                            <img src="img/member3-avatar.jpg" alt="Lê Văn Cường" class="avatar-img">
+                            <i class="fas fa-user avatar-icon" style="display: none;"></i>
+                        </div>
+                        <div class="avatar-upload">
+                            <input type="file" id="upload-member3" accept="image/*" onchange="uploadAvatar('member3', this)">
+                            <label for="upload-member3" class="upload-btn">
+                                <i class="fas fa-camera"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Nguyễn Trần Duy Khả</h3>
+                        <p class="member-role">Backend Developer</p>
+                        <p class="member-description">Chuyên gia về database và API development, thành thạo PHP và Python.</p>
+                        <div class="member-social">
+                            <a href="https://facebook.com/levancuong" class="social-link facebook" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="showEmail('cuong@example.com')" class="social-link email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="member-card" onclick="openMemberModal('member4')">
+                    <div class="member-avatar-container">
+                        <div class="member-avatar" id="avatar-member4">
+                            <img src="img/member4-avatar.jpg" alt="Phạm Thị Dung" class="avatar-img">
+                            <i class="fas fa-user avatar-icon" style="display: none;"></i>
+                        </div>
+                        <div class="avatar-upload">
+                            <input type="file" id="upload-member4" accept="image/*" onchange="uploadAvatar('member4', this)">
+                            <label for="upload-member4" class="upload-btn">
+                                <i class="fas fa-camera"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Trần Phan Đình Huy</h3>
+                        <p class="member-role">Frontend Developer</p>
+                        <p class="member-description">Yêu thích JavaScript và các framework hiện đại như Vue.js và Angular.</p>
+                        <div class="member-social">
+                            <a href="https://www.facebook.com/Nakdaituong?mibextid=wwXIfr&rdid=2RFcLFn1GK6T6rfR#" class="social-link facebook" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="showEmail('dung@example.com')" class="social-link email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 5 -->
+                <div class="member-card" onclick="openMemberModal('member5')">
+                    <div class="member-avatar-container">
+                        <div class="member-avatar" id="avatar-member5">
+                            <img src="img/member5-avatar.jpg" alt="Hoàng Văn Em" class="avatar-img">
+                            <i class="fas fa-user avatar-icon" style="display: none;"></i>
+                        </div>
+                        <div class="avatar-upload">
+                            <input type="file" id="upload-member5" accept="image/*" onchange="uploadAvatar('member5', this)">
+                            <label for="upload-member5" class="upload-btn">
+                                <i class="fas fa-camera"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Nguyễn Thanh Vũ</h3>
+                        <p class="member-role">DevOps & QA Tester</p>
+                        <p class="member-description">Chuyên về testing và deployment, đảm bảo chất lượng sản phẩm.</p>
+                        <div class="member-social">
+                            <a href="https://www.facebook.com/ntvx2002?mibextid=wwXIfr&rdid=sSMgYJkR2UgATSad#" class="social-link facebook" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="javascript:void(0)" onclick="showEmail('em@example.com')" class="social-link email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Liên hệ với chúng tôi</h2>
+                <p>Hãy để lại thông tin, chúng tôi sẽ liên hệ lại sớm nhất</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3><i class="fas fa-info-circle"></i> Thông tin liên hệ</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Địa chỉ</h4>
+                            <p>Trường Đại học Giao Thông Vận Tải TP.HCM, Việt Nam</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Điện thoại</h4>
+                            <p>+84 702479538</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>nguyenduythuan.ng@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Thời gian làm việc</h4>
+                            <p>Thứ 2 - Thứ 6: 8:00 - 17:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="submitForm(event)">
+                        <div class="form-group">
+                            <label for="name">Họ và tên *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Chủ đề *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Chọn chủ đề</option>
+                                <option value="collaboration">Hợp tác dự án</option>
+                                <option value="internship">Thực tập</option>
+                                <option value="consultation">Tư vấn</option>
+                                <option value="other">Khác</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tin nhắn *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Hãy chia sẻ với chúng tôi nhu cầu của bạn..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Gửi tin nhắn
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Member Detail Modals -->
+    <div id="memberModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeMemberModal()">&times;</span>
+            <div id="modalContent">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img id="lightboxImage" src="" alt="" />
+            <div class="lightbox-caption">
+                <h3 id="lightboxTitle"></h3>
+            </div>
+            <div class="lightbox-nav">
+                <button id="lightboxPrev" onclick="prevImage()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="lightboxNext" onclick="nextImage()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Message -->
+    <div id="successMessage" class="success-message">
+        <i class="fas fa-check-circle"></i>
+        <span>Tin nhắn đã được gửi thành công!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
